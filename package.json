@@ -1,0 +1,21 @@
+{
+  "name": "kenya-lost-and-found-id-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kenya Lost & Found ID System - Full Stack Application",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run serve",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "deploy": "firebase deploy",
+    "deploy:functions": "cd backend && npm run deploy",
+    "deploy:frontend": "firebase deploy --only hosting"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

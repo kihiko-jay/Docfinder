@@ -1,0 +1,8 @@
+{
+  "name": "Kenya Lost & Found ID System",
+  "description": "A community-driven platform to help Kenyans recover lost Identification Cards, Passports, and Driving Licenses using AI-powered document scanning and privacy-first data masking.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

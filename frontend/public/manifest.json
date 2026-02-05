@@ -1,0 +1,12 @@
+{
+  "name": "Kenya Lost & Found",
+  "short_name": "KE LostFound",
+  "description": "Recover lost IDs and documents",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#DC2626",
+  "background_color": "#FFFFFF"
+}

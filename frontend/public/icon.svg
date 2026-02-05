@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#DC2626"/>
+  <path fill="#fff" d="M256 80c-88.4 0-160 71.6-160 160s71.6 160 160 160 160-71.6 160-160S344.4 80 256 80zm0 280c-66.3 0-120-53.7-120-120s53.7-120 120-120 120 53.7 120 120-53.7 120-120 120z"/>
+  <path fill="#fff" d="M256 180c-33.1 0-60 26.9-60 60s26.9 60 60 60 60-26.9 60-60-26.9-60-60-60zm0 80c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z"/>
+  <text x="256" y="280" font-family="Arial, sans-serif" font-size="180" font-weight="bold" fill="#fff" text-anchor="middle" dominant-baseline="middle">ID</text>
+</svg>
