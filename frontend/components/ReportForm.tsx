@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { extractDocumentDetails } from '../services/gemini';
+import { extractDocumentDetails } from '../services/documentExtraction';
 import { DocumentType, LostDocument, PrivacyPreferences } from '../types';
 import LocationPicker from './LocationPicker';
 import { uploadDocumentImage } from '../src/services/storage';

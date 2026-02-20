@@ -7,7 +7,7 @@ A community-driven, AI-powered platform designed to simplify the process of reco
 The system operates on community trust and advanced AI technology to reconnect document owners with finders safely and quickly.
 
 ### 1. For Finders (Reporting a Document)
-- **AI Scanning:** Simply snap a photo of the found document. Our integrated **Gemini AI** automatically extracts the owner's name and document type while masking sensitive digits for privacy.
+- **AI Scanning:** Simply snap a photo of the found document. Our integrated **open-source OCR technology** automatically extracts the owner's name and document type while masking sensitive digits for privacy.
 - **Privacy Controls:** Finders choose how the document appears publicly (e.g., blurring the photo or hiding the full document number).
 - **Precise Location:** Use the interactive map to pin the exact location where the document was found.
 - **Instant Reporting:** Once contact details are provided, the report is posted immediately to help the owner.
@@ -42,7 +42,7 @@ Currently, for this version of the application:
 - **Frontend:** React 19, Vite, Tailwind CSS
 - **Backend:** Firebase Functions (Node.js)
 - **Database:** Cloud Firestore
-- **Intelligence:** Google Gemini API (Document Extraction)
+- **Intelligence:** OpenCV WASM + Tesseract.js (Open-source OCR for Document Extraction)
 - **Maps:** Leaflet.js & OpenStreetMap
 - **Payments:** M-Pesa & Stripe Integration
 - **Icons:** FontAwesome 6
@@ -89,8 +89,8 @@ npm run install:all
 ```
 
 3. Set up environment variables:
-   - Copy `.env.example` to `.env` in the root directory
-   - Add your API keys (Gemini, Stripe, Firebase, etc.)
+   - Copy `.env.example` to `.env` in the root directory (see `.env.example` for all required keys: Firebase `VITE_*`, Stripe, M-Pesa, and backend keys for local Functions).
+   - Add your API keys and config values. The same `.env` is used by the frontend and by the backend when running the Functions emulator.
 
 ### Development
 

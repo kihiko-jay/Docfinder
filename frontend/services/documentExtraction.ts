@@ -1,4 +1,3 @@
-
 import { httpsCallable } from "firebase/functions";
 import { ExtractionResult } from "../types";
 import { functions } from "../src/config/firebase";

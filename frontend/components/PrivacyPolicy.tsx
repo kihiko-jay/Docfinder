@@ -19,7 +19,7 @@ const PrivacyPolicy: React.FC = () => {
             AI Document Processing
           </h2>
           <p className="mb-4">
-            Our platform utilizes <strong>Google Gemini AI</strong> to analyze images of found documents. This process is designed to extract only the owner's name and document type. 
+            Our platform utilizes <strong>open-source OCR technology</strong> (Tesseract.js with OpenCV preprocessing) to analyze images of found documents. This process is designed to extract only the owner's name and document type. 
           </p>
           <ul className="list-disc pl-6 space-y-2 text-sm">
             <li>Images are processed in real-time to identify identity details.</li>
