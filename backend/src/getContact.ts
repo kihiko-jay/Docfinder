@@ -3,7 +3,7 @@ import { db } from "./firebase.js";
 import { decryptText } from "./utils/encryption.js";
 import { requireField } from "./utils/validation.js";
 
-export const getContact = onCall(async (request) => {
+export const getContact = onCall({ cors: true }, async (request) => {
   if (!request.auth) {
     throw new Error("Unauthenticated");
   }

@@ -21,7 +21,7 @@ const getAccessToken = async (): Promise<string> => {
   return response.data.access_token;
 };
 
-export const initiateMpesaPayment = onCall(async (request) => {
+export const initiateMpesaPayment = onCall({ cors: true }, async (request) => {
   if (!request.auth) {
     throw new Error("Unauthenticated");
   }

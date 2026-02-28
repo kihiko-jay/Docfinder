@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "cd .. && npx firebase emulators:start --only functions",
+    "dev": "cd .. && npx firebase emulators:start --only functions,storage,firestore --project docufinder-8d531",
     "lint": "echo \"No lint configured\"",
     "serve": "cd .. && npx firebase emulators:start --only functions",
     "deploy": "cd .. && npx firebase deploy --only functions"

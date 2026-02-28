@@ -74,7 +74,7 @@ function extractName(text: string): string {
   return best || "";
 }
 
-export const extractDocument = onCall(async (request) => {
+export const extractDocument = onCall({ cors: true }, async (request) => {
   const base64Image = requireField(request.data?.base64Image, "base64Image");
   const rawBase64 = base64Image.includes(",") ? base64Image.split(",")[1]! : base64Image;
   const inputBuffer = Buffer.from(rawBase64, "base64");

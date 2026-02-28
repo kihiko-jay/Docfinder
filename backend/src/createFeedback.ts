@@ -2,7 +2,7 @@ import { onCall } from "firebase-functions/v2/https";
 import { db } from "./firebase.js";
 import { requireField } from "./utils/validation.js";
 
-export const createFeedback = onCall(async (request) => {
+export const createFeedback = onCall({ cors: true }, async (request) => {
   if (!request.auth) {
     throw new Error("Unauthenticated");
   }

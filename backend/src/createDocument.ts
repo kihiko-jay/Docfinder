@@ -3,7 +3,7 @@ import { db } from "./firebase.js";
 import { encryptText } from "./utils/encryption.js";
 import { requireField } from "./utils/validation.js";
 
-export const createDocument = onCall(async (request) => {
+export const createDocument = onCall({ cors: true }, async (request) => {
   if (!request.auth) {
     throw new Error("Unauthenticated");
   }

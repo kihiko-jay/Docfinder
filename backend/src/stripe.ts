@@ -16,7 +16,7 @@ function getStripe(): Stripe {
   return stripe;
 }
 
-export const createPaymentIntent = onCall(async (request) => {
+export const createPaymentIntent = onCall({ cors: true }, async (request) => {
   if (!request.auth) {
     throw new Error("Unauthenticated");
   }
